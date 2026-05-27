@@ -1,38 +1,20 @@
-export default function Header({
-  connectionState,
-}) {
+import React from 'react'
+
+function Header({ connectionState, qStatus }) {
   return (
-    <header className="hero-header">
+    <header className="page-header">
       <div>
-        <p className="eyebrow">
-          Amazon QuickSight Q
-        </p>
-
-        <h1>
-          Analytics Assistant Dashboard
-        </h1>
-
-        <p className="subtitle">
-          Ask business questions,
-          explore KPI ideas, and turn
-          common analytics prompts
-          into instant Q searches.
-        </p>
+        <p className="eyebrow">Amazon QuickSight Q</p>
+        <h1>AI Analytics Dashboard</h1>
       </div>
-
-      <div className="status-panel">
-        <span
-          className={`status-dot ${connectionState}`}
-        ></span>
-
-        <span>
-          {connectionState === 'ready'
-            ? 'Q Ready'
-            : connectionState === 'error'
-            ? 'Q Error'
-            : 'Preparing Q'}
-        </span>
+      
+      <div className="status-badge">
+        <span className={`status-dot ${connectionState === 'connected' ? 'connected' : ''}`}></span>
+        {/* Render "Preparing Q" or "Question sent to Q" dynamically */}
+        <span>{qStatus || 'Preparing Q'}</span>
       </div>
     </header>
   )
 }
+
+export default Header
