@@ -4,8 +4,8 @@ function Header({ connectionState, qStatus }) {
   return (
     <header className="page-header">
       <div>
-        <p className="eyebrow">Amazon QuickSight Q</p>
-        <h1>AI Analytics Dashboard</h1>
+        <p className="eyebrow">GenBI Dashboard</p>
+        <h1>AI Business Insights powered by AI</h1>
       </div>
       
       <div className="status-badge">

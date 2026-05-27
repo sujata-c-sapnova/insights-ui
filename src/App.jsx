@@ -67,7 +67,7 @@ function App({ signOut, user }) {
           <li>
             <NavLink to="/insights" end className={({ isActive }) => isActive ? "active-link" : ""}>
               <span className="link-icon">▪</span> 
-              <span className="link-text">Assistant</span>
+              <span className="link-text">AI Insights</span>
             </NavLink>
           </li>
           {/* <li>
@@ -79,7 +79,7 @@ function App({ signOut, user }) {
           <li>
             <NavLink to="/insights/hyeles" className={({ isActive }) => isActive ? "active-link" : ""}>
               <span className="link-icon">📊</span> 
-              <span className="link-text">Hyeles</span>
+              <span className="link-text">KPI's Dashboard</span>
             </NavLink>
           </li>
         </ul>
