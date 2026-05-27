@@ -24,8 +24,8 @@ export default function HyelesDashboardPage() {
     <div className="q-workspace">
       <div className="q-toolbar">
         <div>
-          <p className="eyebrow">Embedded experience</p>
-          <h2>Hyeles Operations Dashboard</h2>
+          {/* <p className="eyebrow">Embedded experience</p> */}
+          <h2>Operations Dashboard</h2>
         </div>
       </div>
 
